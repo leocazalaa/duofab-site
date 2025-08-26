@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DuoFab — Impression 3D & Conception sur mesure</title>
+  <meta name="description" content="DuoFab propose l'impression 3D FDM et résine, la conception 3D et le conseil technique. Devis rapide, expédition France entière, SAV sérieux." />
+  <link rel="stylesheet" href="C:\Users\a712825\OneDrive - Norsk Hydro ASA\Bureau\PERSO\3D_BUSINESS\frontend\assets\css\style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#accueil" aria-label="DuoFab - Accueil">
+        <span class="brand-mark">Duo</span><span class="brand-mark alt">Fab</span>
+      </a>
+
+      <button class="burger" aria-label="Ouvrir le menu" aria-controls="mainnav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="mainnav" class="nav">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+
+          <li class="dropdown">
+            <a href="#services" class="has-caret">Services ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="#fdm">Impression FDM</a></li>
+              <li><a href="#resine">Impression résine</a></li>
+              <li><a href="#conception">Conception & Conseil</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#boutique">Boutique</a></li>
+          <li><a href="#materiaux">Matériaux & Capacités</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a class="btn cta-small" href="#upload">Demander un devis</a>
+        <a class="quote-badge" href="#upload" aria-label="Aller au devis">
+          🧾 <span id="quoteCount">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="accueil" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Du concept à l’objet.<br><span class="highlight">Impression 3D & Conception sur mesure</span></h1>
+        <p>Micro-entreprise passionnée : FDM grand volume (500×500×500 mm) et résine haute précision (218.88×122.88×260 mm). Livraison France entière, conseils d’ingénieur & SAV disponible.</p>
+        <div class="hero-actions">
+          <a href="#upload" class="btn cta">Uploader un fichier 3D</a>
+          <a href="#boutique" class="btn ghost">Découvrir la boutique</a>
+        </div>
+
+        <ul class="badges">
+          <li>⏱ Délais rapides</li>
+          <li>📦 Expédition France entière</li>
+          <li>🤝 SAV & Conseil sérieux</li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="printer-card">DuoFab<br/>FDM & Résine</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Services orientés client</h2>
+      <p class="section-subtitle">Vous êtes au centre de la démarche : j’adapte le procédé, le matériau et les paramètres à votre besoin.</p>
+
+      <div class="grid cards">
+        <article id="fdm" class="card">
+          <h3>Impression 3D FDM</h3>
+          <p>Grand volume (jusqu’à 500×500×500 mm). Parfait pour prototypes, pièces fonctionnelles et séries courtes.</p>
+          <ul class="list">
+            <li>Matériaux : PLA, PETG, ABS, ASA, TPU, PC</li>
+            <li>Couleurs : gamme RGB + blanc & noir</li>
+            <li>Options : infill, épaisseurs, post-traitement</li>
+          </ul>
+          <a href="#upload" class="btn small">Obtenir un devis</a>
+        </article>
+
+        <article id="resine" class="card">
+          <h3>Impression résine (SLA/MSLA)</h3>
+          <p>Haute précision, surfaces lisses et détails fins. Idéal pour miniatures, boîtiers, maquettes.</p>
+          <ul class="list">
+            <li>Volume utile : 218.88×122.88×260 mm</li>
+            <li>Résines techniques disponibles</li>
+            <li>Finitions & lavage/UV inclus</li>
+          </ul>
+          <a href="#upload" class="btn small">Obtenir un devis</a>
+        </article>
+
+        <article id="conception" class="card">
+          <h3>Conception 3D & Conseil</h3>
+          <p>Accompagnement technique : modélisation 3D, DfAM (design for additive), choix matériau & optimisation.</p>
+          <ul class="list">
+            <li>À partir d’idées, croquis, ou cahier des charges</li>
+            <li>Amélioration de pièces existantes</li>
+            <li>Conseils d’ingénieur, réponse rapide</li>
+          </ul>
+          <a href="#contact" class="btn small">Parler de votre projet</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Matériaux & Capacités -->
+  <section id="materiaux" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Matériaux & Capacités</h2>
+
+      <div class="grid two-col">
+        <div class="block">
+          <h3>Matériaux disponibles</h3>
+          <ul class="pill-list">
+            <li>PLA</li><li>PETG</li><li>ABS</li><li>ASA</li><li>TPU</li><li>PC</li>
+          </ul>
+          <p><strong>Couleurs :</strong> rouge, vert, bleu, <em>blanc</em> et <em>noir</em> (autres sur demande).</p>
+        </div>
+
+        <div class="block">
+          <h3>Volumes d’impression</h3>
+          <ul class="list">
+            <li><strong>FDM :</strong> 500 × 500 × 500 mm</li>
+            <li><strong>Résine :</strong> 218.88 × 122.88 × 260 mm</li>
+          </ul>
+          <p>Besoin plus grand ? On segmente ou on conçoit des assemblages propres.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Boutique (exemples) -->
+  <section id="boutique" class="section">
+    <div class="container">
+      <h2 class="section-title">Boutique (exemples de modèles)</h2>
+      <p class="section-subtitle">Des modèles prêts à imprimer. Ajoutez au devis et précisez la matière/couleur à l’étape suivante.</p>
+
+      <div class="grid cards">
+        <article class="card product" data-sku="DF-001">
+          <div class="product-media" aria-hidden="true"></div>
+          <h3>Support mural universel</h3>
+          <p>Pratique et robuste, personnalisable en entraxes.</p>
+          <button class="btn small add-to-quote" data-sku="DF-001">Ajouter au devis</button>
+        </article>
+
+        <article class="card product" data-sku="DF-002">
+          <div class="product-media" aria-hidden="true"></div>
+          <h3>Boîtier électronique</h3>
+          <p>Capot + fond, colonnettes et perçages à la demande.</p>
+          <button class="btn small add-to-quote" data-sku="DF-002">Ajouter au devis</button>
+        </article>
+
+        <article class="card product" data-sku="DF-003">
+          <div class="product-media" aria-hidden="true"></div>
+          <h3>Mini présentoir</h3>
+          <p>Idéal pour salons, boutiques, et prototypes visu.</p>
+          <button class="btn small add-to-quote" data-sku="DF-003">Ajouter au devis</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upload / Devis -->
+  <section id="upload" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Demande de devis / Upload</h2>
+      <p class="section-subtitle">Téléchargez votre fichier 3D ou précisez un article de la boutique. Réponse rapide avec conseils.</p>
+
+      <form id="quoteForm" class="quote-form">
+        <div class="form-grid">
+          <label class="field">
+            <span>Fichier 3D (STL, OBJ, 3MF, STEP)</span>
+            <input type="file" name="file" accept=".stl,.obj,.3mf,.step,.stp" />
+          </label>
+
+          <label class="field">
+            <span>Procédé</span>
+            <select name="process" required>
+              <option value="FDM">FDM</option>
+              <option value="RESINE">Résine</option>
+              <option value="A_CONSEILLER">À conseiller</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Matériau</span>
+            <select name="material" required>
+              <option value="PLA">PLA</option>
+              <option value="PETG">PETG</option>
+              <option value="ABS">ABS</option>
+              <option value="ASA">ASA</option>
+              <option value="TPU">TPU (flex)</option>
+              <option value="PC">PC</option>
+              <option value="A_CONSEILLER">À conseiller</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Couleur</span>
+            <select name="color" required>
+              <option value="Blanc">Blanc</option>
+              <option value="Noir">Noir</option>
+              <option value="Rouge">Rouge</option>
+              <option value="Vert">Vert</option>
+              <option value="Bleu">Bleu</option>
+              <option value="A_CONSEILLER">À conseiller</option>
+            </select>
+          </label>
+
+          <label class="field wide">
+            <span>Notes (dimensions, usage, délais, finitions…)</span>
+            <textarea name="notes" rows="4" placeholder="Ex : pièce fonctionnelle, résistance à la chaleur, délais souhaité…"></textarea>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn cta">Envoyer la demande</button>
+          <span class="muted">Réponse rapide par email avec recommandations.</span>
+        </div>
+      </form>
+
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="grid two-col">
+        <div>
+          <p><strong>Email :</strong> <a href="mailto:contact@duofab.fr">contact@duofab.fr</a></p>
+          <p><strong>Disponibilité :</strong> en soirée & week-end — activité passion d’un jeune ingénieur, en développement.</p>
+          <p><strong>Vision :</strong> démarrer sereinement, puis étendre progressivement les prestations.</p>
+        </div>
+        <div>
+          <p><strong>Zones desservies :</strong> France entière (expédition).</p>
+          <p><strong>SAV :</strong> échanges techniques, itérations de design au besoin, corrections rapides.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <small>© <span id="year"></span> DuoFab — Tous droits réservés.</small>
+      <small>Prototypage, impression 3D & conception sur mesure.</small>
+    </div>
+  </footer>
+
+  <script src="C:\Users\a712825\OneDrive - Norsk Hydro ASA\Bureau\PERSO\3D_BUSINESS\frontend\assets\js\app.js"></script>
+</body>
+</html>

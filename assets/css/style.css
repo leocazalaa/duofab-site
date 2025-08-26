@@ -1,0 +1,139 @@
+/* === Base / Theme === */
+:root{
+  --blue-900:#1e3a8a;
+  --blue-600:#2563eb;
+  --blue-500:#3b82f6;
+  --blue-100:#e0e7ff;
+  --bg:#f3f4f6;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --white:#ffffff;
+  --shadow:0 6px 20px rgba(0,0,0,.08);
+  --radius:14px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  color:var(--text); background:var(--bg); line-height:1.6;
+}
+
+.container{width:min(1100px,90vw); margin-inline:auto}
+
+/* === Header / Nav === */
+.site-header{background:var(--blue-900); color:var(--white); position:sticky; top:0; z-index:1000}
+.nav-wrap{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+
+.brand{display:flex; align-items:center; gap:.35rem; font-weight:800; text-decoration:none; color:#fff; font-size:1.3rem}
+.brand-mark{letter-spacing:.5px}
+.brand-mark.alt{color:var(--blue-500)}
+
+.burger{display:none; background:none;border:0; cursor:pointer}
+.burger span{display:block; width:24px; height:2px; background:#fff; margin:5px 0; transition:transform .2s ease}
+
+.nav{display:flex; align-items:center; gap:1rem}
+.nav ul{display:flex; list-style:none; margin:0; padding:0; gap:1rem}
+.nav a{color:#fff; text-decoration:none; font-weight:600; padding:.4rem .5rem; border-radius:8px}
+.nav a:hover{background:rgba(255,255,255,.12)}
+
+.cta-small{background:var(--blue-500); padding:.5rem .8rem}
+.cta-small:hover{background:var(--blue-600)}
+
+.quote-badge{display:inline-flex; align-items:center; gap:.4rem; font-weight:700; padding:.3rem .6rem; background:rgba(255,255,255,.12); border-radius:999px; text-decoration:none; color:#fff}
+
+/* Dropdown */
+.dropdown{position:relative}
+.dropdown-content{
+  display:none; position:absolute; top:100%; left:0; min-width:220px;
+  background:var(--blue-900); border-radius:12px; padding:.4rem; box-shadow:var(--shadow)
+}
+.dropdown-content li{border-bottom:1px solid rgba(255,255,255,.12)}
+.dropdown-content li:last-child{border-bottom:none}
+.dropdown-content a{display:block; padding:.6rem .7rem; border-radius:8px}
+.dropdown-content a:hover{background:rgba(255,255,255,.12)}
+.dropdown:hover .dropdown-content{display:block}
+
+/* === Hero === */
+.hero{background:linear-gradient(180deg, #f8faff 0%, #eef2ff 100%); padding:64px 0}
+.hero-inner{display:grid; grid-template-columns:1.2fr .8fr; gap:40px; align-items:center}
+.hero h1{font-size:clamp(1.9rem,3vw,2.6rem); margin:0 0 10px}
+.highlight{color:var(--blue-900)}
+.hero p{color:#374151; margin:0 0 16px}
+
+.hero-actions{display:flex; gap:12px; margin:16px 0 0}
+.btn{display:inline-block; border:0; background:var(--blue-600); color:#fff; padding:.85rem 1.1rem; border-radius:12px; font-weight:700; text-decoration:none; box-shadow:var(--shadow); cursor:pointer}
+.btn:hover{background:#1d4ed8}
+.btn.ghost{background:#fff; color:var(--blue-900); border:2px solid var(--blue-100)}
+.btn.small{padding:.55rem .8rem; font-size:.95rem}
+.cta{background:var(--blue-500)}
+
+.badges{display:flex; gap:14px; padding:0; margin:18px 0 0; list-style:none; flex-wrap:wrap}
+.badges li{background:#fff; padding:.45rem .7rem; border-radius:999px; box-shadow:var(--shadow); color:#111827; font-weight:600}
+
+.hero-art{display:grid; place-items:center}
+.printer-card{
+  width:100%; aspect-ratio:4/3; border-radius:24px; background:conic-gradient(from 180deg, #dbeafe, #bfdbfe, #93c5fd, #dbeafe);
+  box-shadow:var(--shadow); display:grid; place-items:center; font-weight:800; color:#0f172a; text-align:center
+}
+
+/* === Sections === */
+.section{padding:64px 0}
+.section.alt{background:#fff}
+.section-title{font-size:clamp(1.4rem,2.5vw,2rem); margin:0 0 10px}
+.section-subtitle{color:var(--muted); margin:0 0 24px}
+
+.grid{display:grid; gap:20px}
+.grid.cards{grid-template-columns:repeat(3,1fr)}
+.grid.two-col{grid-template-columns:repeat(2,1fr)}
+
+.card{
+  background:#fff; border-radius:var(--radius); padding:18px; box-shadow:var(--shadow)
+}
+.card h3{margin:0 0 8px}
+.list{padding-left:18px; margin:.2rem 0 1rem}
+.pill-list{display:flex; gap:8px; list-style:none; padding:0; margin:.4rem 0 1rem; flex-wrap:wrap}
+.pill-list li{background:var(--blue-100); color:var(--blue-900); padding:.35rem .6rem; border-radius:999px; font-weight:700}
+
+/* Products */
+.product-media{background:linear-gradient(135deg,#e5e7eb,#f9fafb); border-radius:12px; aspect-ratio:16/9; margin-bottom:.7rem}
+
+/* Upload form */
+.quote-form{background:#fff; padding:18px; border-radius:var(--radius); box-shadow:var(--shadow)}
+.form-grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+.field{display:flex; flex-direction:column; gap:.35rem}
+.field.wide{grid-column:1/-1}
+input[type="file"], select, textarea{
+  width:100%; border:1px solid #e5e7eb; border-radius:10px; padding:.7rem; font:inherit; background:#f9fafb
+}
+textarea{resize:vertical}
+.form-actions{display:flex; align-items:center; gap:12px; margin-top:10px}
+.muted{color:var(--muted)}
+
+/* Toast */
+.toast{
+  position:fixed; right:20px; bottom:20px; background:#111827; color:#fff; padding:.8rem 1rem; border-radius:12px; box-shadow:var(--shadow);
+  opacity:0; transform:translateY(10px); transition:all .25s ease; pointer-events:none; max-width:min(360px,90vw)
+}
+.toast.show{opacity:1; transform:translateY(0)}
+
+/* Footer */
+.site-footer{background:var(--blue-900); color:#c7d2fe; padding:20px 0}
+.foot{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap}
+.foot a{color:#fff}
+
+/* === Responsive === */
+@media (max-width: 920px){
+  .grid.cards{grid-template-columns:1fr 1fr}
+  .hero-inner{grid-template-columns:1fr}
+}
+@media (max-width: 680px){
+  .grid.cards, .grid.two-col{grid-template-columns:1fr}
+  .form-grid{grid-template-columns:1fr}
+  .burger{display:inline-block}
+  .nav{position:fixed; inset:64px 0 auto 0; background:var(--blue-900); padding:14px 20px; display:none; flex-direction:column; gap:10px}
+  .nav.open{display:flex}
+  .nav ul{flex-direction:column; gap:0}
+  .dropdown-content{position:static; display:none; padding:.3rem; background:rgba(255,255,255,.08)}
+  .dropdown.open .dropdown-content{display:block}
+}
