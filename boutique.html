@@ -1,71 +1,79 @@
 <!-- boutique.html -->
-<nav id="mainnav" class="nav">
-<ul>
-<li><a href="index.html">Accueil</a></li>
-<li class="dropdown">
-<a href="services.html" class="has-caret">Services ▾</a>
-<ul class="dropdown-content">
-<li><a href="services.html#fdm">Impression FDM</a></li>
-<li><a href="services.html#resine">Impression résine</a></li>
-<li><a href="services.html#conception">Conception & Conseil</a></li>
-</ul>
-</li>
-<li><a href="boutique.html">Boutique</a></li>
-<li><a href="services.html#capacites">Matériaux & Capacités</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-<a class="btn cta-small" href="index.html#upload">Demander un devis</a>
-<a class="quote-badge" href="index.html#upload">🧾 <span id="quoteCount">0</span></a>
-</nav>
-</div>
-</header>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boutique — DuoFab</title>
+  <meta name="description" content="Modèles prêts à imprimer par DuoFab. Ajoutez au devis et choisissez le matériau et la couleur." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">Duo</span><span class="brand-mark alt">Fab</span></a>
+      <button class="burger" aria-label="Ouvrir le menu" aria-controls="mainnav" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav id="mainnav" class="nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li class="dropdown">
+            <a href="services.html" class="has-caret">Services ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="services.html#fdm">Impression FDM</a></li>
+              <li><a href="services.html#resine">Impression résine</a></li>
+              <li><a href="services.html#conception">Conception & Conseil</a></li>
+            </ul>
+          </li>
+          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="services.html#capacites">Matériaux & Capacités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn cta-small" href="index.html#upload">Demander un devis</a>
+        <a class="quote-badge" href="index.html#upload">🧾 <span id="quoteCount">0</span></a>
+      </nav>
+    </div>
+  </header>
 
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">Boutique</h1>
+      <p class="section-subtitle">Ajoutez au devis, puis indiquez vos préférences (matière, couleur, quantité).</p>
 
-<section class="section">
-<div class="container">
-<h1 class="section-title">Boutique</h1>
-<p class="section-subtitle">Ajoutez au devis, puis indiquez vos préférences (matière, couleur, quantité).</p>
+      <div class="grid cards">
+        <article class="card product" data-sku="DF-001">
+          <div class="product-media" aria-hidden="true"></div>
+          <h2>Support mural universel</h2>
+          <p>Personnalisable en entraxes. Idéal pour l’organisation.</p>
+          <button class="btn small add-to-quote" data-sku="DF-001">Ajouter au devis</button>
+        </article>
 
+        <article class="card product" data-sku="DF-002">
+          <div class="product-media" aria-hidden="true"></div>
+          <h2>Boîtier électronique</h2>
+          <p>Capot + fond, perçages et colonnettes au choix.</p>
+          <button class="btn small add-to-quote" data-sku="DF-002">Ajouter au devis</button>
+        </article>
 
-<div class="grid cards">
-<article class="card product" data-sku="DF-001">
-<div class="product-media" aria-hidden="true"></div>
-<h2>Support mural universel</h2>
-<p>Personnalisable en entraxes. Idéal pour l’organisation.</p>
-<button class="btn small add-to-quote" data-sku="DF-001">Ajouter au devis</button>
-</article>
+        <article class="card product" data-sku="DF-003">
+          <div class="product-media" aria-hidden="true"></div>
+          <h2>Mini présentoir</h2>
+          <p>Pour salons, boutiques ou maquettes rapides.</p>
+          <button class="btn small add-to-quote" data-sku="DF-003">Ajouter au devis</button>
+        </article>
+      </div>
 
+      <p class="muted" style="margin-top:14px">Besoin d’un modèle sur mesure ? <a href="services.html#conception">Voir la conception 3D</a>.</p>
+    </div>
+  </section>
 
-<article class="card product" data-sku="DF-002">
-<div class="product-media" aria-hidden="true"></div>
-<h2>Boîtier électronique</h2>
-<p>Capot + fond, perçages et colonnettes au choix.</p>
-<button class="btn small add-to-quote" data-sku="DF-002">Ajouter au devis</button>
-</article>
+  <footer class="site-footer">
+    <div class="container foot">
+      <small>© <span id="year"></span> DuoFab — Tous droits réservés.</small>
+      <small><a href="mentions.html">Mentions légales / CGV</a></small>
+    </div>
+  </footer>
 
-
-<article class="card product" data-sku="DF-003">
-<div class="product-media" aria-hidden="true"></div>
-<h2>Mini présentoir</h2>
-<p>Pour salons, boutiques ou maquettes rapides.</p>
-<button class="btn small add-to-quote" data-sku="DF-003">Ajouter au devis</button>
-</article>
-</div>
-
-
-<p class="muted" style="margin-top:14px">Besoin d’un modèle sur mesure ? <a href="services.html#conception">Voir la conception 3D</a>.</p>
-</div>
-</section>
-
-
-<footer class="site-footer">
-<div class="container foot">
-<small>© <span id="year"></span> DuoFab — Tous droits réservés.</small>
-<small><a href="mentions.html">Mentions légales / CGV</a></small>
-</div>
-</footer>
-
-
-<script src="assets/js/app.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
 </body>
 </html>
