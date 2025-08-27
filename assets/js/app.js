@@ -9,6 +9,15 @@ burger?.addEventListener('click', () => {
   burger.setAttribute('aria-expanded', String(isOpen));
 });
 
+// Fermer les menus mobiles quand on repasse en desktop
+window.addEventListener('resize', () => {
+  if (!window.matchMedia('(max-width: 680px)').matches) {
+    document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
+    document.querySelector('.nav')?.classList.remove('open');
+    document.querySelector('.burger')?.setAttribute('aria-expanded', 'false');
+  }
+});
+
 // Dropdown behavior for mobile (tap to open)
 const dropdown = document.querySelector('.dropdown > .has-caret');
 dropdown?.addEventListener('click', (e) => {
